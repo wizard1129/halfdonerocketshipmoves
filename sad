@@ -1,0 +1,30 @@
+import pygame
+import time
+
+pygame.init()
+
+WIDTH=700
+HEIGHT=700
+
+display_surface=pygame.display.set_mode((WIDTH,HEIGHT))
+pygame.display.set_caption("The Rocketship Moves!")
+
+space=pygame.image.load("bluespacebg.jpeg")
+image = pygame.transform.scale(space, (WIDTH,HEIGHT))
+
+ship=pygame.image.load("rocketship12.png")
+image = pygame.transform.scale(ship, (70,100))
+
+class Player(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+
+
+while(True):
+
+
+
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
